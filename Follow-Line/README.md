@@ -2,7 +2,7 @@
 ## Introduction
 In this work was implemented a method to keep a f1 vehicle inside a circuit. The intended was to reach the goal only by the use of computer vision algorithms. 
 ## Materials and Methods
-The materials avaliables to perform the work were an online-based plataform (https://unibotics.org/) and a user guide (http://jderobot.github.io/RoboticsAcademy/exercises/AutonomousCars/follow_line/). This last provided point to point instruction to get a good pipiline of the work. 
+The materials avaliable to perform the work were an online-based plataform (https://unibotics.org/) and a user guide (http://jderobot.github.io/RoboticsAcademy/exercises/AutonomousCars/follow_line/). This last provided point to point instruction to get a good pipiline of the work. 
 
 As for how the simulator is implemented, two main featured must be described: the circuit and the vehicle. On the one hand, the circuit was implemented with a red line in the center of the road. It follows the road along all the circuit, including both straight and curved segments. Besides, only the flat circuit was built, that is, without ascents or descents. On the other hand, the vehicle posseesses a camera in its front side. This camera is not centered with the simetry of the car, right side looking at by front side being displaced.
 
