@@ -17,4 +17,7 @@ An application programming interface is avaliable to perform the work. The main 
 Considerations to be considered:
 - The system can start with the vehicle positioned in any position.
 - The car must follow a stable conduction. 
-- As much generalizable as it could beGeneralizable
+- As much generalizable as it could be. The car should be able to complete a lap in another circuit.
+
+Firstly, it is resolved how to maintain the car inside the road, considering the curved segments. For this, the red line can be thresholding from HSV space. 
+The first challenge to be outcomed is the first consideration. If the car is set in any positon in the initial moment, 
