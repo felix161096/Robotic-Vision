@@ -20,9 +20,12 @@ Considerations to be considered:
 - As much generalizable as it could be. The car should be able to complete a lap in another circuit.
 
 As for how to maintain the car inside the road, considering the curved segments: the red line can be thresholding from HSV space. This implies a change from the original color space of the image retrieved,  i.e. BGR. For this aim, OpenCV library was used, being the boundaries in HSV: Hue range is [0, 179], Saturation range is [0, 255] and Value range is [0, 255]. The threshold for red color segmentation of the image were fixed as follow: 
+
 - H = [0, 30]
 - S = [190, 255]
 - V = [200, 255]
+
+In addition, to decrease computational cost of thresholding the whole image, only the significant rows for the next steps were considered. Due to the image size (480x640 pixels), the pixels considered were those in the range [240, 254].
 
 <figure>
     <img src='/img/gdal-overview.png' />
@@ -37,4 +40,4 @@ This impliques a
 The first challenge to be outcomed is the first consideration. If the car is set in any positon in the initial moment, 
 
 
-##Results
+## Results
