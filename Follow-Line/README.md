@@ -19,5 +19,22 @@ Considerations to be considered:
 - The car must follow a stable conduction. 
 - As much generalizable as it could be. The car should be able to complete a lap in another circuit.
 
-Firstly, it is resolved how to maintain the car inside the road, considering the curved segments. For this, the red line can be thresholding from HSV space. 
+As for how to maintain the car inside the road, considering the curved segments: the red line can be thresholding from HSV space. This implies a change from the original color space of the image retrieved,  i.e. BGR. For this aim, OpenCV library was used, being the boundaries in HSV: Hue range is [0, 179], Saturation range is [0, 255] and Value range is [0, 255]. The threshold for red color segmentation of the image were fixed as follow: 
+- H = [0, 30]
+- S = [190, 255]
+- V = [200, 255]
+
+<figure>
+    <img src='/img/gdal-overview.png' />
+    <font size="2">
+    <figcaption> Abb.1: <a href= "http://r-spatial.org//2016/11/29/openeo.html">http://r-spatial.org//2016/11/29/openeo.html </a> 
+    </figcaption>
+    </font>
+</figure>
+
+
+This impliques a 
 The first challenge to be outcomed is the first consideration. If the car is set in any positon in the initial moment, 
+
+
+##Results
