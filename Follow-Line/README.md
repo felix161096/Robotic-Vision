@@ -25,7 +25,7 @@ As for how to maintain the car inside the road, considering the curved segments:
 - S = [190, 255]
 - V = [200, 255]
 
-In addition, to decrease computational cost of thresholding the whole image, only the significant rows for the next steps were considered. Due to the image size (480x640 pixels), the pixels considered were those in the range [240, 254].
+In addition, to decrease computational cost of thresholding the whole image, only the significant rows for the next steps were considered. Due to the image size (480x640 pixels), the pixels considered were those in the range [240, 260].
 
 <figure>
     <img src= 'https://user-images.githubusercontent.com/37750255/111031240-bb2eaa80-8406-11eb-993f-722424f343f7.png' />
