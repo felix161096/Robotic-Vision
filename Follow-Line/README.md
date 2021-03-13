@@ -28,13 +28,11 @@ As for how to maintain the car inside the road, considering the curved segments:
 In addition, to decrease computational cost of thresholding the whole image, only the significant rows for the next steps were considered. Due to the image size (480x640 pixels), the pixels considered were those in the range [240, 254].
 
 <figure>
-    <img src='/img/gdal-overview.png' />
+    <img src= 'https://user-images.githubusercontent.com/37750255/111031240-bb2eaa80-8406-11eb-993f-722424f343f7.png' />
     <font size="2">
-    <figcaption> Abb.1: <a href= "http://r-spatial.org//2016/11/29/openeo.html">http://r-spatial.org//2016/11/29/openeo.html </a> 
+    <figcaption> Figure 1. BGR to HSV scace color transformation. Also was indicated the rows which were considered for the resolution.
     </figcaption>
     </font>
-</figure>
-
 
 This impliques a 
 The first challenge to be outcomed is the first consideration. If the car is set in any positon in the initial moment, 
