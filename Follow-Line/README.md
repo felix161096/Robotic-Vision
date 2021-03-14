@@ -75,8 +75,4 @@ The first challenge to be outcomed is the first consideration. If the car is set
 
 ## Results
 
-
-[![Watch the video](https://user-images.githubusercontent.com/37750255/111085635-772bca80-8518-11eb-8a4f-a7369c906951.mp4)
-
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-30oWzz1rwk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![IMAGE ALT TEXT HERE](https://user-images.githubusercontent.com/37750255/111085971-26b56c80-851a-11eb-8a05-56ed9840a101.png)](https://user-images.githubusercontent.com/37750255/111085635-772bca80-8518-11eb-8a4f-a7369c906951.mp4)
