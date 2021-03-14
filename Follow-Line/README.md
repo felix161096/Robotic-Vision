@@ -63,7 +63,7 @@ Because there were different curved sections along the road, with different radi
 
 &nbsp; 
 
-
+![velocidadvserror](https://user-images.githubusercontent.com/37750255/111081410-818f9980-8503-11eb-9625-6d1aa8f67b80.png)
 
 
 
