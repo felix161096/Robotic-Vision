@@ -45,7 +45,23 @@ The PID controller required of a reference to keep the car inside the road. In t
     </figcaption>
     </font>
 
+&nbsp;
+
+Due to the fact that along the road there were diferent curved segmets, with different radious, and straight segments, it was implemented 5 PID controllers. Each one depended on the input error E associated. When lower E was, it meant that the car was in a straight segment. Therefore, the linear speed was set to its maximum value. Unlike, when higher E was, the linear speed was set to its minimun value. Besides, it was considered that inside each E section linear speed change as E, with a simple P controller. As for angular velocity, a PID controller was fixed for each E section. A summary about how it was implemented is showed in Figure XX and XX.
+
+<figure>
+    <img src= 'https://user-images.githubusercontent.com/37750255/111079227-5902a200-84f9-11eb-9bd2-917f7578a93d.png' />
+    <font size="2">
+    <figcaption> Figure 3. .
+    </figcaption>
+    </font>
+
 &nbsp; 
+
+
+
+
+
 
 Computing 
 This impliques a 
