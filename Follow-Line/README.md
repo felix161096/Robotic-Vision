@@ -34,6 +34,9 @@ In addition, to decrease computational cost of thresholding the whole image, onl
     </figcaption>
     </font>
 
+The PID controller required of a reference to keep the car inside the road. In this case, the center of the red line in a straight segment was considered, i.e. the middle point of the columns of the image. 
+
+Computing 
 This impliques a 
 The first challenge to be outcomed is the first consideration. If the car is set in any positon in the initial moment, 
 
