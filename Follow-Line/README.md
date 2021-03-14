@@ -1,3 +1,5 @@
+#This work is not finished. Changes are still possible.
+
 # Follow Line
 ## Introduction
 In this work was implemented a method to keep a f1 vehicle inside a circuit. The intended was to reach the goal only by the use of computer vision algorithms. 
@@ -74,5 +76,7 @@ The first challenge to be outcomed is the first consideration. If the car is set
 
 
 ## Results
+
+[14/03/2021 23:15] This first attempt was made with a Brain Frequency of 12.5 and a GUI Frecuenci of 12.5: 
 
 [![IMAGE ALT TEXT HERE](https://user-images.githubusercontent.com/37750255/111085971-26b56c80-851a-11eb-8a05-56ed9840a101.png)](https://user-images.githubusercontent.com/37750255/111085635-772bca80-8518-11eb-8a4f-a7369c906951.mp4)
