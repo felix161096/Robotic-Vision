@@ -38,7 +38,10 @@ In addition, to decrease computational cost of thresholding the whole image, onl
 
 The PID controller required of a reference to keep the car inside the road. In this case, the center of the red line in a straight segment was considered, i.e. the middle point of the columns of the image. Besides, it is needed to obtain a value from the image to compare with the reference and obtain the error (see Figue XXX). This value was the numbers of pixels in column axis i where the mass center of segmented image was.
 
-<img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
+<p align="center">
+<img src="https://render.githubusercontent.com/render/math?math=D = M_{10} / M_{00}">
+</p>
+where M10 and M00 are image moments. It is a particular weighted average of image pixel intensities. To find the centroid of the image, it is generally converted to binary format and then is found its center.
 
 <figure>
     <img src= 'https://user-images.githubusercontent.com/37750255/111072120-76c00f00-84d9-11eb-811c-e8c911280143.png' />
