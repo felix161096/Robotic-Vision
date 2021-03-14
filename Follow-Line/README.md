@@ -38,6 +38,8 @@ In addition, to decrease computational cost of thresholding the whole image, onl
 
 The PID controller required of a reference to keep the car inside the road. In this case, the center of the red line in a straight segment was considered, i.e. the middle point of the columns of the image. Besides, it is needed to obtain a value from the image to compare with the reference and obtain the error (see Figue XXX). This value was the numbers of pixels in column axis i where the mass center of segmented image was.
 
+<img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
+
 <figure>
     <img src= 'https://user-images.githubusercontent.com/37750255/111072120-76c00f00-84d9-11eb-811c-e8c911280143.png' />
     <font size="2">
@@ -47,7 +49,7 @@ The PID controller required of a reference to keep the car inside the road. In t
 
 &nbsp;
 
-Due to the fact that along the road there were diferent curved segmets, with different radious, and straight segments, it was implemented 5 PID controllers. Each one depended on the input error E associated. When lower E was, it meant that the car was in a straight segment. Therefore, the linear speed was set to its maximum value. Unlike, when higher E was, the linear speed was set to its minimun value. Besides, it was considered that inside each E section linear speed change as E, with a simple P controller. As for angular velocity, a PID controller was fixed for each E section. A summary about how it was implemented is showed in Figure XX and XX.
+Because there were different curved sections along the road, with different radial and straight sections, 5 PID controllers were implemented. Each depended on the associated E input error. When the E was lower, it meant the car was in a straight segment. Therefore, the linear velocity was set at its maximum value. In contrast, when E was greater, the linear velocity was set at its minimum value. Furthermore, it was considered that within each section E the linear velocity changes as E, with a simple P controller. Regarding the angular velocity, a PID controller was set for each section E. A summary of how it was implemented is shown in Figures XX and XX.
 
 <figure>
     <img src= 'https://user-images.githubusercontent.com/37750255/111079227-5902a200-84f9-11eb-9bd2-917f7578a93d.png' />
