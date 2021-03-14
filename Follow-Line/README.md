@@ -38,8 +38,14 @@ In addition, to decrease computational cost of thresholding the whole image, onl
 
 The PID controller required of a reference to keep the car inside the road. In this case, the center of the red line in a straight segment was considered, i.e. the middle point of the columns of the image. Besides, it is needed to obtain a value from the image to compare with the reference and obtain the error (see Figue XXX). This value was the numbers of pixels in column axis i where the mass center of segmented image was.
 
-![jdrot](https://user-images.githubusercontent.com/37750255/111069999-f6e17700-84cf-11eb-80f7-f096286bbd8a.png)
+<figure>
+    <img src= 'https://user-images.githubusercontent.com/37750255/111072120-76c00f00-84d9-11eb-811c-e8c911280143.png' />
+    <font size="2">
+    <figcaption> Figure 2. .
+    </figcaption>
+    </font>
 
+&nbsp; 
 
 Computing 
 This impliques a 
