@@ -34,6 +34,8 @@ In addition, to decrease computational cost of thresholding the whole image, onl
     </figcaption>
     </font>
 
+&nbsp; 
+
 The PID controller required of a reference to keep the car inside the road. In this case, the center of the red line in a straight segment was considered, i.e. the middle point of the columns of the image. 
 
 Computing 
