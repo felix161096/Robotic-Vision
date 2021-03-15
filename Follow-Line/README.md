@@ -65,10 +65,16 @@ Because there were different curved sections along the road, with different radi
 
 &nbsp; 
 
-![velocidadvserror](https://user-images.githubusercontent.com/37750255/111081410-818f9980-8503-11eb-9625-6d1aa8f67b80.png)
+<figure>
+    <img src= 'https://user-images.githubusercontent.com/37750255/111224895-5a0dff00-85df-11eb-82ad-387dcc4f323d.png' />
+    <font size="2">
+    <figcaption> Figure 3. .
+    </figcaption>
+    </font>
 
+&nbsp; 
 
-
+A safety mode was implemented for the cases when E is higher than 230 pixels. In this case, the linear speed decreases significatively and other PID controller is implemented. In the Figure XX, this safety mode is the 5th controller. In this mode, only when E in higher than 3, the car return to the "normal" operation. By this way an hysteresis cicle is completed.
 
 Computing 
 This impliques a 
