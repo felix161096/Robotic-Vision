@@ -76,17 +76,35 @@ Because there were different curved sections along the road, with different radi
 
 A safety mode was implemented for the cases when E is higher than 230 pixels. In this case, the linear speed decreases significatively and other PID controller is implemented. In the Figure XX, this safety mode is the 5th controller. In this mode, only when E in higher than 3, the car return to the "normal" operation. By this way an hysteresis cicle is completed.
 
-Computing 
-This impliques a 
-The first challenge to be outcomed is the first consideration. If the car is set in any positon in the initial moment, 
+To avoid errors regarding the loss of the red line, a robust algorithm was implemented:
+- If the car starts in a random position, the driver forces the car to turn until the red line appears. In this case, it is not possible to detect whether the red line is detected in the correct direction.
+- If the car loses the red line during its operation, then the car continues in the direction of turn in which it was turning.
 
 
 ## Results
 
-[14/03/2021 23:15] This first attempt was made with a Brain Frequency of 12.5 and a GUI Frecuency of 12.5: 
+[14/03/2021 23:15] This first attempt was made with a Brain Frequency of 12.5 and a GUI Frequency of 12.5: 
 
 [![IMAGE ALT TEXT HERE](https://user-images.githubusercontent.com/37750255/111085971-26b56c80-851a-11eb-8a05-56ed9840a101.png)](https://user-images.githubusercontent.com/37750255/111085635-772bca80-8518-11eb-8a4f-a7369c906951.mp4)
 
 [15/03/2021 22:58] Safety mode working.
 
 [![IMAGE ALT TEXT HERE](https://user-images.githubusercontent.com/37750255/111085971-26b56c80-851a-11eb-8a05-56ed9840a101.png)](https://user-images.githubusercontent.com/37750255/111226992-31d3cf80-85e2-11eb-9610-5fa91438a559.mp4)
+
+[17/03/2021 21:57] In this sesion was attempted to rise the brain frequency and/or GUI frequency. However, the limitations of the avaliable workstation avoided a good performance in this regard.
+
+Other point that was attempted was the implementation of a robust algorithm to avoid loss line problems. Somo examples of how these addon worked are showed in the folloing:
+
+- First: what error ocurred?
+
+[![IMAGE ALT TEXT HERE](https://user-images.githubusercontent.com/37750255/111085971-26b56c80-851a-11eb-8a05-56ed9840a101.png)](https://user-images.githubusercontent.com/37750255/111538697-4abcbc00-876d-11eb-81d9-07e5ed1dda60.mp4)
+
+- Second: fisrt problem resolved:
+
+[![IMAGE ALT TEXT HERE](https://user-images.githubusercontent.com/37750255/111085971-26b56c80-851a-11eb-8a05-56ed9840a101.png)](https://user-images.githubusercontent.com/37750255/111538792-6a53e480-876d-11eb-9a94-6f4f3359ff7e.mp4)
+
+-Thirst: second + speeding up in line detection:
+
+[![IMAGE ALT TEXT HERE](https://user-images.githubusercontent.com/37750255/111085971-26b56c80-851a-11eb-8a05-56ed9840a101.png)](https://user-images.githubusercontent.com/37750255/111538933-953e3880-876d-11eb-8fb3-cb6b05073e32.mp4)
+
+
