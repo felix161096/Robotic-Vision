@@ -103,7 +103,7 @@ Other point that was attempted was the implementation of a robust algorithm to a
 
 [![IMAGE ALT TEXT HERE](https://user-images.githubusercontent.com/37750255/111085971-26b56c80-851a-11eb-8a05-56ed9840a101.png)](https://user-images.githubusercontent.com/37750255/111538792-6a53e480-876d-11eb-9a94-6f4f3359ff7e.mp4)
 
--Thirst: second + speeding up in line detection:
+-Third: second + speeding up in line detection:
 
 [![IMAGE ALT TEXT HERE](https://user-images.githubusercontent.com/37750255/111085971-26b56c80-851a-11eb-8a05-56ed9840a101.png)](https://user-images.githubusercontent.com/37750255/111538933-953e3880-876d-11eb-8fb3-cb6b05073e32.mp4)
 
