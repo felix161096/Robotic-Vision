@@ -1,5 +1,3 @@
-#This work is not finished. Changes are still possible.
-
 # Follow Line
 ## Introduction
 In this work was implemented a method to keep a f1 vehicle inside a circuit. The intended was to reach the goal only by the use of computer vision algorithms. 
@@ -55,12 +53,11 @@ The PID controller required of a reference to keep the car inside the road. In t
 where M10 and M00 are image moments. It is a particular weighted average of image pixel intensities. To find the centroid of the image, it is generally converted to binary format and then is found its center.
 
 <figure>
-    <img src= 'https://user-images.githubusercontent.com/37750255/111072120-76c00f00-84d9-11eb-811c-e8c911280143.png' />
+    <img src= 'https://user-images.githubusercontent.com/37750255/111691361-84a1c700-882e-11eb-92da-c0f055af0cb7.png' />
     <font size="2">
     <figcaption> Figure 3. Basic sketch of the PID controller implemented (left). Reference and deviation of an example frame (right).
     </figcaption>
     </font>
-
 &nbsp;
 
 Because there were different curved sections along the road, with different radial and straight sections, 5 PID controllers were implemented. Each depended on the associated E input error. When the E was lower, it meant the car was in a straight segment. Therefore, the linear velocity was set at its maximum value. In contrast, when E was greater, the linear velocity was set at its minimum value. Furthermore, it was considered that within each section E the linear velocity changes as E, with a simple P controller. Regarding the angular velocity, a PID controller was set for each section E. Besides, angular velocity output was limited in all the controller. A summary of how it was implemented is shown in Figures 4 and 5. 
