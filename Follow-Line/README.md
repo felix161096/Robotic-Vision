@@ -58,6 +58,7 @@ where M10 and M00 are image moments. It is a particular weighted average of imag
     <figcaption> Figure 3. Basic sketch of the PID controller implemented (left). Reference and deviation of an example frame (right).
     </figcaption>
     </font>
+    
 &nbsp;
 
 Because there were different curved sections along the road, with different radial and straight sections, 5 PID controllers were implemented. Each depended on the associated E input error. When the E was lower, it meant the car was in a straight segment. Therefore, the linear velocity was set at its maximum value. In contrast, when E was greater, the linear velocity was set at its minimum value. Furthermore, it was considered that within each section E the linear velocity changes as E, with a simple P controller. Regarding the angular velocity, a PID controller was set for each section E. Besides, angular velocity output was limited in all the controller. A summary of how it was implemented is shown in Figures 4 and 5. 
