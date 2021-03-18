@@ -124,3 +124,8 @@ Other point that was attempted was the implementation of a robust algorithm to a
 [![IMAGE ALT TEXT HERE](https://user-images.githubusercontent.com/37750255/111085971-26b56c80-851a-11eb-8a05-56ed9840a101.png)](https://user-images.githubusercontent.com/37750255/111538933-953e3880-876d-11eb-8fb3-cb6b05073e32.mp4)
 
 
+[18/03/2021 20:21] In this sesion was attempted to rise the brain frequency and/or GUI frequency. However, the limitations of the avaliable workstation avoided a good performance in this regard.
+
+Due to that facts, the ultimate video of the resolution is the following:
+
+[![IMAGE ALT TEXT HERE](https://user-images.githubusercontent.com/37750255/111085971-26b56c80-851a-11eb-8a05-56ed9840a101.png)](https://user-images.githubusercontent.com/37750255/111085635-772bca80-8518-11eb-8a4f-a7369c906951.mp4)
