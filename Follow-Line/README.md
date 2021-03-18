@@ -63,7 +63,14 @@ where M10 and M00 are image moments. It is a particular weighted average of imag
 
 &nbsp;
 
-Because there were different curved sections along the road, with different radial and straight sections, 5 PID controllers were implemented. Each depended on the associated E input error. When the E was lower, it meant the car was in a straight segment. Therefore, the linear velocity was set at its maximum value. In contrast, when E was greater, the linear velocity was set at its minimum value. Furthermore, it was considered that within each section E the linear velocity changes as E, with a simple P controller. Regarding the angular velocity, a PID controller was set for each section E. A summary of how it was implemented is shown in Figures 4 and 5.
+Because there were different curved sections along the road, with different radial and straight sections, 5 PID controllers were implemented. Each depended on the associated E input error. When the E was lower, it meant the car was in a straight segment. Therefore, the linear velocity was set at its maximum value. In contrast, when E was greater, the linear velocity was set at its minimum value. Furthermore, it was considered that within each section E the linear velocity changes as E, with a simple P controller. Regarding the angular velocity, a PID controller was set for each section E. Besides, angular velocity output was limited in all the controller. A summary of how it was implemented is shown in Figures 4 and 5. 
+
+As for angular velocity limiter, the limits for each controller were:
+- Controller #1: angular velocity ϵ [-0.5, 0.5]
+- Controller #2: angular velocity ϵ [-0.5, 0.5]
+- Controller #3: angular velocity ϵ [-0.5, 0.5]
+- Controller #4: angular velocity ϵ [-0.7, 0.7]
+- Controller #5: angular velocity ϵ [-0.2, 0.2]
 
 <figure>
     <img src= 'https://user-images.githubusercontent.com/37750255/111079227-5902a200-84f9-11eb-9bd2-917f7578a93d.png' />
