@@ -45,7 +45,7 @@ In addition, to decrease computational cost of thresholding the whole image, onl
 
 &nbsp; 
 
-The PID controller required of a reference to keep the car inside the road. In this case, the center of the red line in a straight segment was considered, i.e. the middle point of the columns of the image. Besides, it is needed to obtain a value from the image to compare with the reference and obtain the error (see Figure 3). This value was the numbers of pixels in column axis i where the mass center of segmented image was.
+The PID controller required of a reference to keep the car inside the road. In this case, the center of the red line in a straight segment was considered, i.e. the middle point of the columns of the image. Besides, it is needed to obtain a value from the image to compare with the reference and obtain the error (see Figure 3). This value was the number of pixels on the axis of the column where the center of mass of the segmented image was.
 
 <p align="center">
 <img src="https://render.githubusercontent.com/render/math?math=D = M_{10} / M_{00}">
@@ -107,7 +107,7 @@ To avoid errors regarding the loss of the red line, a robust algorithm was imple
 
 [17/03/2021 21:57] In this sesion was attempted to rise the brain frequency and/or GUI frequency. However, the limitations of the avaliable workstation avoided a good performance in this regard.
 
-Other point that was attempted was the implementation of a robust algorithm to avoid loss line problems. Some examples of how these addon worked are showed in the folloing:
+Other point that was attempted was the implementation of a robust algorithm to avoid loss line problems. Some examples of how these addon worked are showed in the following:
 
 - First: what error ocurred?
 
