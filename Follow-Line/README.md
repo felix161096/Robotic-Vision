@@ -88,11 +88,11 @@ As for angular velocity limiter, the limits for each controller were:
 
 &nbsp; 
 
-A safety mode was implemented for the cases when E is higher than 230 pixels. In this case, the linear speed decreases significatively and other PID controller is implemented. In the Figure 4, this safety mode is the 5th controller. In this mode, only when E in higher than 3, the car return to the "normal" operation. By this way an hysteresis cicle is completed.
+A safety mode was implemented for the cases when E is higher than 230 pixels. In this case, the linear speed decreases significatively and other PID controller is implemented. In the Figure 4, this safety mode is the 5th controller. In this mode, only when E is higher than 3, the car return to the "normal" operation. By this way an hysteresis cicle is completed.
 
 To avoid errors regarding the loss of the red line, a robust algorithm was implemented:
 - If the car starts in a random position, the driver forces the car to turn until the red line appears. In this case, it is not possible to detect whether the red line is detected in the correct direction.
-- If the car loses the red line during its operation, then the car continues in the direction of turn in which it was turning.
+- If the car lost the red line during its operation, then the car continues in the direction of turn in which it was turning.
 
 
 ## Results
@@ -107,13 +107,13 @@ To avoid errors regarding the loss of the red line, a robust algorithm was imple
 
 [17/03/2021 21:57] In this sesion was attempted to rise the brain frequency and/or GUI frequency. However, the limitations of the avaliable workstation avoided a good performance in this regard.
 
-Other point that was attempted was the implementation of a robust algorithm to avoid loss line problems. Somo examples of how these addon worked are showed in the folloing:
+Other point that was attempted was the implementation of a robust algorithm to avoid loss line problems. Some examples of how these addon worked are showed in the folloing:
 
 - First: what error ocurred?
 
 [![IMAGE ALT TEXT HERE](https://user-images.githubusercontent.com/37750255/111085971-26b56c80-851a-11eb-8a05-56ed9840a101.png)](https://user-images.githubusercontent.com/37750255/111538697-4abcbc00-876d-11eb-81d9-07e5ed1dda60.mp4)
 
-- Second: fisrt problem resolved:
+- Second: first problem resolved:
 
 [![IMAGE ALT TEXT HERE](https://user-images.githubusercontent.com/37750255/111085971-26b56c80-851a-11eb-8a05-56ed9840a101.png)](https://user-images.githubusercontent.com/37750255/111538792-6a53e480-876d-11eb-9a94-6f4f3359ff7e.mp4)
 
