@@ -24,6 +24,7 @@ El siguiente punto es la busqueda de las correspondencias entre la camara izquie
 &nbsp; 
     
 Una vez se sabe la localización de los puntos del espacio donde un punto de la imagen izquierda puede estar en la imagen derecha, es necesario conocer su localización exacta en la imagen derecha. El objetivo es buscar la correspondencia de los puntos entre ambas imagenes. Los pasos ha seguir para conseguirlo han sido:
+- Pasar la imagen de formado BGR a HSV, para mejorar la busqueda de correspondencias.
 - Fijar un umbral en píxeles alrededor de la línea epipolar poryectada en la imagen derecha. 
 - Obtencion de un parche de kxk píxeles alrededor del punto de la imagen izquierda.
 - Recorrer el umbral de la imagen derecha, siguiendo la epipolar proyectada, obtenindo una medida de "similaritud" entre parches.
