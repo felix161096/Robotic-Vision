@@ -23,7 +23,24 @@ El siguiente punto es la busqueda de las correspondencias entre la camara izquie
 
 &nbsp; 
   
-Una vez se sabe la localización de los puntos del espacio donde un punto de la imagen izquierda puede estar en la imagen derecha, es necesario conocer su localización exacta en la imagen derecha. El objetivo es buscar la correspondencia de los puntos entre ambas imagenes. Para ello se ha usado un umbral
+Una vez se sabe la localización de los puntos del espacio donde un punto de la imagen izquierda puede estar en la imagen derecha, es necesario conocer su localización exacta en la imagen derecha. El objetivo es buscar la correspondencia de los puntos entre ambas imagenes. Los pasos ha seguir para conseguirlo han sido:
+- Fijar un umbral en píxeles alrededor de la línea epipolar poryectada en la imagen derecha. 
+- Obtencion de un parche de kxk píxeles alrededor del punto de la imagen izquierda.
+- Recorrer el umbral de la imagen derecha, siguiendo la epipolar proyectada, obtenindo una medida de "similaritud" entre parches.
+- Obtener la posición en que es máxima la similaritud entre píxeles.
+Como medida de similaritud se ha utilizado la suma de diferencias al cuadrado entre píxeles (SSD):
+    
+<p align="center">
+<img src="https://render.githubusercontent.com/render/math?math=SSD = \sum (pixel_{der} - pixel_{izq})^{2}">
+</p>
+    
+Una vez obtenida las correspondencias, el siguiente paso es obtener el punto de mínima distancia en el que las lineas se cortan o se cruzan en el espacio tridimensional. Las lineas son aquellas formadas por el centro de la imagen y el obtenido con el píxel (usando las funciones del simulador) para ambas imagenes. Existen diferentes maneras de encontrar una solucion, las cuales van desde una solución geométrica hasta una optimización por mínimos cuadrados. Para este caso se ha implementado la solución de optimización. El punto buscado es aquel representado en la Figura 4. Se observa que es el punto medio donde la distancia entre ambas curvas se hace mínima.
+    
+<figure>
+    <img src= 'https://user-images.githubusercontent.com/37750255/119274417-08ea3f00-bc10-11eb-8c3b-659081288969.png' />
+    <font size="2">
+    <figcaption> Figure 3. Restricción epipolar. Imagen obtenida de los apuntes de la asignatura de Visión Robótica, J.M. Cañas, Universidad Rey Juan Carlos.
+    </figcaption>
+    </font>
 
-
-
+&nbsp; 
