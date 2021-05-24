@@ -61,3 +61,22 @@ El último paso es dibujar los puntos obtenidos en el simulador. Para ello se us
     
     
 ## Resultados
+**24/05/2021 10:27** Reconstrucción 3D con k = 11 (tamaño del umbral entre parches). Ene sta simulación se ha recorrido toda la linea de proyeccion epipolar para buscar correspondencias en la imagen de la derecha. Además, no se ha restringido la distancia máxima a la cual las dos rectas de retroproyección pueden cortarse. Puede observarse puntos que no han logrado una buena correspondencia, aunque se ha conseguido la reconstrucción exitosa de todo el par estereo.
+
+<figure>
+    <img src= 'https://user-images.githubusercontent.com/37750255/119319937-4d5ef480-bc7b-11eb-885a-58c7c9b42049.png' />
+    <font size="2">
+    <figcaption> Resultado 24/05/2021 10:27.
+    </figcaption>
+    </font>
+
+&nbsp;     
+
+[![IMAGE ALT TEXT HERE](https://user-images.githubusercontent.com/37750255/119319937-4d5ef480-bc7b-11eb-885a-58c7c9b42049.png)](https://user-images.githubusercontent.com/37750255/119325521-3cb17d00-bc81-11eb-8d06-a72ae35a868c.mp4)
+
+
+
+
+    
+    
+    
