@@ -1,3 +1,4 @@
+
 # 3D Reconstruction
 ## Introducción
 En esta práctica se tiene como objetivo obtener la reconstrucción 3D de un par de imágenes estéreo captadas por una cámara. El objetivo es conseguirlo solo mediante el uso de algoritmos de visión computacional.
@@ -98,10 +99,7 @@ El último paso es dibujar los puntos obtenidos en el simulador. Para ello se us
 
 &nbsp;  
 
+https://user-images.githubusercontent.com/37750255/119420228-43310a80-bcfc-11eb-8a40-d85f2bb54f53.mp4
 
-https://user-images.githubusercontent.com/37750255/119419552-cd786f00-bcfa-11eb-9e30-cbaa53a7d68c.mp4
 
-
-    
-    
     
