@@ -60,7 +60,7 @@ En la Figura 4 se ve un ejemplo de un punto al que se le ha obtenido su correspo
     
 &nbsp; 
 
-Una vez obtenida las correspondencias, el siguiente paso es obtener el punto de mínima distancia en el que las líneas se cortan o se cruzan en el espacio tridimensional. Las líneas son aquellas formadas por el centro de la imagen y el obtenido con el píxel (usando las funciones del simulador) para ambas imágenes. Existen diferentes maneras de encontrar una solución, las cuales van desde una solución geométrica hasta una optimización por mínimos cuadrados. Para este caso se ha implementado la solución de optimización. El punto buscado es aquel representado en la Figura 5. Se observa que es el punto medio donde la distancia entre ambas curvas se hace mínima.
+Una vez obtenida las correspondencias, el siguiente paso es obtener el punto de mínima distancia en el que las líneas se cortan o se cruzan en el espacio tridimensional. Las líneas son aquellas formadas por el centro de la imagen y el obtenido con el píxel (usando las funciones del simulador) para ambas imágenes. Existen diferentes maneras de encontrar una solución, las cuales van desde una solución geométrica hasta una optimización por mínimos cuadrados. Para este caso se ha implementado la solución de optimización. El punto buscado es aquel representado en la Figura 5. Se observa que es el punto medio donde la distancia entre ambas curvas se hace mínima. Para evitar emparejamientos defectuosos, que se reflejen en cruces con una gran distancia entre las rectas, se ha establecido un umbral mínimo de distancia máxima entre rectas en el punto de cruce.
     
 <figure>
     <img src= 'https://user-images.githubusercontent.com/37750255/119274417-08ea3f00-bc10-11eb-8c3b-659081288969.png' />
