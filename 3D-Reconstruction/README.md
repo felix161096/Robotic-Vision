@@ -98,9 +98,8 @@ El último paso es dibujar los puntos obtenidos en el simulador. Para ello se us
 
 &nbsp;  
 
-[![IMAGE ALT TEXT HERE](https://user-images.githubusercontent.com/37750255/119417069-51c7f380-bcf5-11eb-9108-f7d89188d9b2.png)](https://user-images.githubusercontent.com/37750255/119418803-20e9bd80-bcf9-11eb-93a1-f31c1f3881d6.mp4)
 
-
+https://user-images.githubusercontent.com/37750255/119419552-cd786f00-bcfa-11eb-9e30-cbaa53a7d68c.mp4
 
 
     
