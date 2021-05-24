@@ -16,9 +16,9 @@ Para tal fin se ha hecho uso de la herramienta Unibotics, la cual puede encontra
 &nbsp; 
 
 Se dispone de dos imagenes estereo que devuelve la aplicación, una obtenida con la camara izquierda y otra con la cámara derecha. Estas imagenes se encuentran en formato BGR de color. El primer paso a tener en cuenta es saber que es lo que se desea reconstruir. En este caso, serían los monigores visulizados en las imágenes. Sin embargo, una reconstrucción densa de todos los píxeles de la imagen supondría un alto coste computacional, por lo que se a optado por optener unicamente la reconstrucción de los bordes de la imagen. Para ello se ha usado el método de Canny, implementado en  openCV, y se obtuvo lo mostrado en la Figura 2.
-    
+
 <figure>
-    <img src= 'https://user-images.githubusercontent.com/37750255/119400475-8a0e0880-bcda-11eb-97df-57e0203120fc.png' />
+    <img src= 'https://user-images.githubusercontent.com/37750255/119407394-749ddc00-bce4-11eb-9668-a1f449d1fbdf.png' />
     <font size="2">
     <figcaption> Figura 2. Imagen de bordes obtenido mediante el método de Canny de openCV apricado a las imagenes estereo izquierda y derecha.
     </figcaption>
