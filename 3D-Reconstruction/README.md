@@ -87,8 +87,20 @@ El último paso es dibujar los puntos obtenidos en el simulador. Para ello se us
 
 [![IMAGE ALT TEXT HERE](https://user-images.githubusercontent.com/37750255/119319937-4d5ef480-bc7b-11eb-885a-58c7c9b42049.png)](https://user-images.githubusercontent.com/37750255/119325521-3cb17d00-bc81-11eb-8d06-a72ae35a868c.mp4)
 
-**24/05/2021 XXX** Reconstrucción 3D con k = 39 (tamaño del umbral entre parches). En esta simulación se ha recorrido toda la línea de proyección epipolar para buscar correspondencias en la imagen de la derecha. **MEJORAS:** En esta versión se ha restringido la distancia máxima en el punto de cruce entre las rectas de retroproyección de los puntos correspondientes de la imagen izquierda y derecha. Se rechazan y no se representan todos aquellas distancias en el cruce que superan cierto umbral. Esto último, unido al aumento de k, han sido los potenciadores de una mejor actuación del sistema de reconstrucción 3D.
+**24/05/2021 23:40** Reconstrucción 3D con k = 39 (tamaño del umbral entre parches). En esta simulación se ha recorrido toda la línea de proyección epipolar para buscar correspondencias en la imagen de la derecha. **MEJORAS:** En esta versión se ha restringido la distancia máxima en el punto de cruce entre las rectas de retroproyección de los puntos correspondientes de la imagen izquierda y derecha. Se rechazan y no se representan todos aquellas distancias en el cruce que superan cierto umbral. Esto último, unido al aumento de k, han sido los potenciadores de una mejor actuación del sistema de reconstrucción 3D.
     
+<figure>
+    <img src= 'https://user-images.githubusercontent.com/37750255/119417069-51c7f380-bcf5-11eb-9108-f7d89188d9b2.png' />
+    <font size="2">
+    <figcaption> Resultado 24/05/2021 10:27.
+    </figcaption>
+    </font>
+
+&nbsp;  
+
+[![IMAGE ALT TEXT HERE](https://user-images.githubusercontent.com/37750255/119417069-51c7f380-bcf5-11eb-9108-f7d89188d9b2.png)](https://user-images.githubusercontent.com/37750255/119418803-20e9bd80-bcf9-11eb-93a1-f31c1f3881d6.mp4)
+
+
 
 
     
